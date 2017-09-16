@@ -1,0 +1,18 @@
+<div ng-controller="task1Ctrl as task1" >
+    <h1>Задание №1</h1>
+    Список из 5 квартир обновляется каждые 5 секунд.
+    <div class="list">
+        <table>
+            <tr>
+                <th>id квартиры</th>
+                <th>Описание</th>
+            </tr>
+            <tr ng-repeat="item in task1.apartments | filter:{ booked: 0 }">
+                <td>{{item.apart_id}}</td>
+                <td>{{item.desc}}</td>
+
+            </tr>
+        </table>
+
+    </div>
+</div>

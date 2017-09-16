@@ -1,0 +1,31 @@
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+table {
+ border-collapse: collapse;
+
+}
+
+table tr td,table tr th{
+    padding:5px;
+    border:1px solid #aaa
+}
+
+input {
+    min-width:400px
+}
+th.asc,th.desc {
+    cursor:pointer;
+}
+th.asc:after{
+    content:'↓';
+    color:green;
+    padding-left:3px;
+}
+th.desc:after{
+    content:'↑';
+    color:green;
+    padding-left:3px;
+}

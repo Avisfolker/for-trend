@@ -1,0 +1,26 @@
+<div ng-controller="task2Ctrl as task2" >
+    <h1>Задание №2</h1>
+    <form name="search">
+        <br>
+        <input placeholder="Начните вводить название застройщика или ЖК" type="texte"  ng-model="task2.searchName" >
+        <br>
+        <br>
+    </form>
+    <div class="list">
+        <table>
+            <tr>
+                <th>Застройщик</th>
+                <th>ЖК</th>
+                <th ng-click="task2.asc = !task2.asc" ng-class="{true: 'asc',false:'desc'}[task2.asc]">План</th>
+                <th>Реклама</th>
+            </tr>
+            <tr ng-repeat="item in task2.rewards | orderBy: task2.orderProp: task2.asc | filter:task2.searchName">
+                <td>{{item.builderName}}</td>
+                <td>{{item.blocks[0].blockName}}</td>
+                <td>{{item.blocks[0].blockPlanPercent}}</td>
+                <td>{{item.builderAdverticement}}</td>
+            </tr>
+        </table>
+
+    </div>
+</div>

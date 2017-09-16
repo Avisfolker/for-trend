@@ -1,0 +1,9 @@
+{
+  "data": [
+    {"apart_id": 0,"booked": 0,"desc":"Квартира №1"},
+    {"apart_id": 1,"booked": 0,"desc":"Квартира №2"},
+    {"apart_id": 2,"booked": 0,"desc":"Квартира №3"},
+    {"apart_id": 3,"booked": 0,"desc":"Квартира №4"},
+    {"apart_id": 4,"booked": 0,"desc":"Квартира №5"}
+  ]
+}
